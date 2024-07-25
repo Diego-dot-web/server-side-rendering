@@ -1,0 +1,11 @@
+<html>
+ <body>
+  <% messages.forEach((message, i) => { %>
+      <h2><%= message.text %></h2>
+      <p><%= message.user %></p>
+      <p><%= message.added %></p>
+      <a href="<%=`message/${i}`%>">Open message</a>
+   <% })%>
+   <a href="/new"> create a new message </a>
+ </body>
+</html>

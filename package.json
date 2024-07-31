@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "start": "psql && node app.js && node db/populate.js"
+    "start": "sudo systemctl start postgresql && psql && node app.js && node db/populate.js"
   },
   "dependencies": {
     "dotenv": "^16.4.5",

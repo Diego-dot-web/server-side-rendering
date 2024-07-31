@@ -9,5 +9,4 @@ app.use(express.urlencoded({ extended: true }));
 
 app.use("/", messsagesRouter);
 
-const PORT = 8000;
-app.listen(PORT);
+app.listen(port);

@@ -1,3 +1,4 @@
+require("dotenv").config();
 const express = require("express");
 const app = express();
 const messsagesRouter = require("./routes/messages");
@@ -9,4 +10,4 @@ app.use(express.urlencoded({ extended: true }));
 
 app.use("/", messsagesRouter);
 
-app.listen(port);
+app.listen(process.env.PORT);
